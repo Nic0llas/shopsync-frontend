@@ -74,11 +74,11 @@ Sistema de gestão de estoque, vendas, clientes e relatórios, com interface mod
 
 2. **Instale as dependências:**
 
-'''
+
 npm install
 
 yarn install
-'''
+
 
 3. **Configure as variáveis de ambiente:**
    - Crie um arquivo `.env` na raiz e defina a URL da API backend:
