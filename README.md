@@ -1,23 +1,27 @@
 # ShopSync Sistema (Frontend)
 
-Sistema de gestão de estoque, vendas, clientes e relatórios, com interface moderna e responsiva, desenvolvido em React + TypeScript, utilizando Vite para performance e Tailwind CSS para o design.
+Sistema de gestão de estoque, vendas, clientes e relatórios, com interface moderna e responsiva, desenvolvido em **React + TypeScript**, utilizando **Vite** para performance e **Tailwind CSS** para o design.
 
-O sistema ainda está em fase de desenvolvimento e aprimoramento contínuo — ajustes de layout, melhorias de usabilidade e novas funcionalidades estão sendo implementadas para torná-lo cada vez mais fluido, intuitivo e completo.
-## Funcionalidades Principais
+> ⚠️ Este projeto ainda está em fase de desenvolvimento — melhorias visuais, correções de usabilidade e novas funcionalidades estão sendo implementadas continuamente.
+
+---
+
+## 🚀 Funcionalidades Principais
 
 - **Home**: Visão geral de produtos, vendas, clientes e pedidos pendentes.
-- **Gestão de Produtos**: Cadastro, edição, exclusão e listagem de produtos, com controle de estoque e categorias.
-- **Gestão de Vendas**: Registro de vendas, visualização, cancelamento e relatórios detalhados.
-- **Gestão de Clientes**: Cadastro, edição, exclusão e busca de clientes.
-- **Gestão de Fornecedores**: Cadastro, edição, exclusão e busca de fornecedores.
-- **Gestão de Categorias**: Cadastro, edição e exclusão de categorias de produtos.
-- **Relatórios**: Geração e download de relatórios de vendas e produtos em CSV.
-- **Ações Rápidas**: Botões para adicionar produtos, vendas, clientes e acessar relatórios.
-- **Chatbot**: Assistente virtual integrado para dúvidas rápidas. Atualizações futuras previstas.
-- **Autenticação**: Login, registro, recuperação de senha e proteção de rotas. 
-- **Tema Claro/Escuro**: Alternância entre temas com persistência.
+- **Gestão de Produtos**: Cadastro, edição, exclusão e listagem com controle de estoque e categorias.
+- **Gestão de Vendas**: Registro, visualização e cancelamento de vendas, com relatórios detalhados.
+- **Gestão de Clientes e Fornecedores**: Cadastro, edição, exclusão e buscas.
+- **Gestão de Categorias**: Organização e filtragem de produtos por categoria.
+- **Relatórios**: Exportação em CSV de vendas e produtos.
+- **Ações Rápidas**: Acesso rápido a funções frequentes.
+- **Chatbot (beta)**: Assistente virtual integrado (em fase de testes).
+- **Autenticação**: Login, registro, recuperação de senha e rotas protegidas.
+- **Tema Claro/Escuro**: Alternância de tema com persistência.
 
-## Tecnologias Utilizadas
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 - [React 18](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -27,25 +31,24 @@ O sistema ainda está em fase de desenvolvimento e aprimoramento contínuo — a
 - [Axios](https://axios-http.com/)
 - [Lucide React](https://lucide.dev/)
 - [Headless UI](https://headlessui.dev/)
-- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/)
+- [Docker](https://www.docker.com/) + [Docker Compose](https://docs.docker.com/compose/)
 
-## Estrutura de Pastas
+---
 
+## 📁 Estrutura de Pastas
 ```
 ├── src/
-│   ├── components/         # Componentes reutilizáveis (Sidebar, Modais, Listas, etc)
-│   ├── contexts/           # Contextos de autenticação e tema
-│   ├── pages/              # Páginas principais (Home, Dashboard, Sales, Reports, etc)
-│   ├── services/           # Serviços de integração com API
-│   ├── database/           # (mock ou integrações locais)
-│   ├── index.css           # Estilos globais (Tailwind)
-│   └── main.tsx            # Ponto de entrada da aplicação
-├── public/                 # Arquivos estáticos
-├── Dockerfile              # Build e deploy com Nginx
-├── docker-compose.yml      # Orquestração frontend, backend e banco
-├── nginx.conf              # Configuração do Nginx
-├── package.json            # Dependências e scripts
-└── ...
+│ ├── components/ # Componentes reutilizáveis (Sidebar, Modais, etc.)
+│ ├── contexts/ # Contextos (auth, tema)
+│ ├── pages/ # Páginas principais
+│ ├── services/ # Conexão com API
+│ ├── database/ # Mocks ou integrações locais
+│ └── main.tsx # Ponto de entrada da aplicação
+├── public/ # Arquivos estáticos
+├── Dockerfile # Configuração para build com Nginx
+├── docker-compose.yml # Orquestra frontend/backend/db
+├── nginx.conf # Configuração do Nginx
+
 ```
 
 ## Instalação e Execução Local
@@ -56,21 +59,29 @@ O sistema ainda está em fase de desenvolvimento e aprimoramento contínuo — a
 
 ### Passos
 
+## 🧪 Instalação e Execução Local
+
+### Pré-requisitos
+- Node.js 18+
+- npm ou yarn
+
+### Passos
+
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/QueirozCarlos/Shopsync-Frontend.git
-   cd chatbot-saas-frontend
-   ```
+   git clone https://github.com/Nic0llas/shopsync-frontend.git
+   cd shopsync-frontend
+
 2. **Instale as dependências:**
-   ```bash
-   npm install
-   # ou
-   yarn install
-   ```
+npm install
+# ou
+yarn install
+
 3. **Configure as variáveis de ambiente:**
    - Crie um arquivo `.env` na raiz e defina a URL da API backend:
-     ```env
+     ```
      VITE_API_BASE_URL=http://localhost:8080
+
      ```
 4. **Inicie o projeto em modo desenvolvimento:**
    ```bash
@@ -110,7 +121,3 @@ O sistema ainda está em fase de desenvolvimento e aprimoramento contínuo — a
 
 ## Licença
 Este projeto é open-source sob a licença MIT.
-
----
-
-> Shopsync Sistema v1.0 — Feito com ❤️ para gestão eficiente de estoques e vendas. 
