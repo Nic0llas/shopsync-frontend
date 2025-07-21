@@ -74,7 +74,7 @@ Sistema de gestão de estoque, vendas, clientes e relatórios, com interface mod
 
 2. **Instale as dependências:**
 npm install
-# ou
+
 yarn install
 
 3. **Configure as variáveis de ambiente:**
@@ -86,7 +86,9 @@ yarn install
 4. **Inicie o projeto em modo desenvolvimento:**
    ```bash
    npm run dev
+
    # ou
+   
    yarn dev
    ```
 5. **Acesse em:** [http://localhost:5173](http://localhost:5173)
