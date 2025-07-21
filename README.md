@@ -73,9 +73,12 @@ Sistema de gestão de estoque, vendas, clientes e relatórios, com interface mod
    cd shopsync-frontend
 
 2. **Instale as dependências:**
+
+'''
 npm install
 
 yarn install
+'''
 
 3. **Configure as variáveis de ambiente:**
    - Crie um arquivo `.env` na raiz e defina a URL da API backend:
@@ -88,7 +91,7 @@ yarn install
    npm run dev
 
    # ou
-   
+
    yarn dev
    ```
 5. **Acesse em:** [http://localhost:5173](http://localhost:5173)
